@@ -18,20 +18,22 @@ class CardGame:
 
 
   def check_for_ace(self, card):
- #   if card.value = 1:
+  # to check value == is used instead of =
+  if card.value = 1:
       return True
- #   else
+  # else should always be followed by :
+  else
       return False
    
-
- # dif highest_card(self, card1 card2):
+# def should be used to define classes
+ dif highest_card(self, card1 card2):
   if card1.value > card2.value:
     return card
   else:
     return card2
   
 
-
+# indentation error
 #def cards_total(self, cards):
   total
   for card in cards:
