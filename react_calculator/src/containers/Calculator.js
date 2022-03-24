@@ -81,6 +81,10 @@ function App() {
   }
 
   const divide = (number) => {
+    // real world calculators show undefined and not infinity for divide by zero
+    if (number === 0) 
+    setRunningTotal("Undefined");
+    else
     setRunningTotal(parseFloat(previousTotal) / parseFloat(number));
   }
 
