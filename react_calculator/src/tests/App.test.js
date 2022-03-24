@@ -121,6 +121,26 @@ describe('Calculator', () => {
 
         expect(runningTotal.text()).toEqual('2');
     })
-    
+
+    it('add and then clear', () => {
+        const buttonClear = container.find('#clear');
+
+        const button1 = container.find('#number1');
+        const buttonAdd = container.find('#operator_add');
+        const button4 = container.find('#number4');
+        const buttonEquals = container.find('#operator-equals')
+
+        const runningTotal = container.find('#running-total');
+        buttonClear.simulate('click');
+
+        button1.simulate('click');
+        buttonAdd.simulate('click');
+        button4.simulate('click');
+        buttonEquals.simulate('click');
+        buttonClear.simulate('click')
+
+        expect(runningTotal.text()).toEqual('0');
+    })
+
 })
   
