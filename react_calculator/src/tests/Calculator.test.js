@@ -17,4 +17,12 @@ describe('Calculator', () => {
     button4.simulate('click');
     expect(runningTotal.text()).toEqual('4');
   })
+
+  it('should change running total on number enter', () => {
+    const button4 = container.find('#number4');
+    const runningTotal = container.find('#running-total');
+    button4.simulate('click');
+    expect(runningTotal.text()).toEqual('4');
+  })
+
 })
