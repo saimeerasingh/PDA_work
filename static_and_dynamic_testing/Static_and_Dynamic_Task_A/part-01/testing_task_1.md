@@ -35,9 +35,11 @@ class CardGame:
 
 # indentation error
 #def cards_total(self, cards):
-  total
+#total should be assigned to zero
+  total = 0
   for card in cards:
     total += card.value
-    return "You have a total of" + total
+  #indentation to put the return statement out of the for loop 
+  return "You have a total of" + total
   
 ```
